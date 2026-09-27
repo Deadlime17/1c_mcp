@@ -51,10 +51,10 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.mcp_ОсновнаяРоль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.mcp_ПолныеПрава</xr:Item>
 			</DefaultRoles>
 			<Vendor>Харин Владимир</Vendor>
-			<Version>1.6.1</Version>
+			<Version>1.7.0</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -74,7 +74,10 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>mcp_MCPСервер</Subsystem>
-			<Role>mcp_ОсновнаяРоль</Role>
+			<Role>mcp_ПолныеПрава</Role>
+			<Role>mcp_БазоваяРоль</Role>
+			<Role>mcp_ИнструментМетаданные</Role>
+			<Role>mcp_РесурсОписаниеСинтаксиса</Role>
 			<CommonModule>mcp_ОбщегоНазначения</CommonModule>
 			<CommonModule>mcp_Диспетчер</CommonModule>
 			<CommonModule>mcp_КонтейнерыПовтИсп</CommonModule>
