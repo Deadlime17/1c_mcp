@@ -362,6 +362,226 @@
 						</UsualGroup>
 					</ChildItems>
 				</Page>
+				<Page name="СтраницаКомпоненты" id="300">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компоненты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаКомпонентыРасширеннаяПодсказка" id="301"/>
+					<ChildItems>
+						<LabelDecoration name="КМ_Пояснение" id="302">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Компоненты — отдельные расширения с дополнительными инструментами MCP-сервера. Поставляемые компоненты лежат в обработке mcp_Компоненты. Установка и включение вступают в силу после перезапуска сеанса.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КМ_ПоясненикКонтекстноеМеню" id="303"/>
+							<ExtendedTooltip name="КМ_ПоясненикРасширеннаяПодсказка" id="304"/>
+						</LabelDecoration>
+						<Table name="КМ_ТаблицаКомпонентов" id="320">
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<DataPath>КМ_Компоненты</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КМ_ТаблицаКомпонентовКонтекстноеМеню" id="321"/>
+							<AutoCommandBar name="КМ_ТаблицаКомпонентовКоманднаяПанель" id="322">
+								<ChildItems>
+									<Button name="КМ_КнопкаОбновитьСписок" id="317">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КМ_ОбновитьСписок</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="КМ_КнопкаОбновитьСписокРасширеннаяПодсказка" id="318"/>
+									</Button>
+									<Button name="КМ_КнопкаУстановить" id="307">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КМ_Установить</CommandName>
+										<ExtendedTooltip name="КМ_КнопкаУстановитьРасширеннаяПодсказка" id="308"/>
+									</Button>
+									<Button name="КМ_КнопкаОбновить" id="309">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КМ_Обновить</CommandName>
+										<ExtendedTooltip name="КМ_КнопкаОбновитьРасширеннаяПодсказка" id="310"/>
+									</Button>
+									<Button name="КМ_КнопкаВключить" id="311">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КМ_Включить</CommandName>
+										<ExtendedTooltip name="КМ_КнопкаВключитьРасширеннаяПодсказка" id="312"/>
+									</Button>
+									<Button name="КМ_КнопкаОтключить" id="313">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КМ_Отключить</CommandName>
+										<ExtendedTooltip name="КМ_КнопкаОтключитьРасширеннаяПодсказка" id="314"/>
+									</Button>
+									<Button name="КМ_КнопкаПроверить" id="315">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КМ_Проверить</CommandName>
+										<ExtendedTooltip name="КМ_КнопкаПроверитьРасширеннаяПодсказка" id="316"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КМ_ТаблицаКомпонентовРасширеннаяПодсказка" id="323"/>
+							<SearchStringAddition name="КМ_ТаблицаКомпонентовСтрокаПоиска" id="324">
+								<AdditionSource>
+									<Item>КМ_ТаблицаКомпонентов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КМ_ТаблицаКомпонентовСтрокаПоискаКонтекстноеМеню" id="325"/>
+								<ExtendedTooltip name="КМ_ТаблицаКомпонентовСтрокаПоискаРасширеннаяПодсказка" id="326"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КМ_ТаблицаКомпонентовСостояниеПросмотра" id="327">
+								<AdditionSource>
+									<Item>КМ_ТаблицаКомпонентов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КМ_ТаблицаКомпонентовСостояниеПросмотраКонтекстноеМеню" id="328"/>
+								<ExtendedTooltip name="КМ_ТаблицаКомпонентовСостояниеПросмотраРасширеннаяПодсказка" id="329"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КМ_ТаблицаКомпонентовУправлениеПоиском" id="330">
+								<AdditionSource>
+									<Item>КМ_ТаблицаКомпонентов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КМ_ТаблицаКомпонентовУправлениеПоискомКонтекстноеМеню" id="331"/>
+								<ExtendedTooltip name="КМ_ТаблицаКомпонентовУправлениеПоискомРасширеннаяПодсказка" id="332"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">КМ_ТаблицаКомпонентовПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="КМ_ТаблицаКомпонентовСиноним" id="333">
+									<DataPath>КМ_Компоненты.Синоним</DataPath>
+									<ContextMenu name="КМ_ТаблицаКомпонентовСинонимКонтекстноеМеню" id="334"/>
+									<ExtendedTooltip name="КМ_ТаблицаКомпонентовСинонимРасширеннаяПодсказка" id="335"/>
+								</InputField>
+								<InputField name="КМ_ТаблицаКомпонентовВерсияПоставки" id="336">
+									<DataPath>КМ_Компоненты.ВерсияПоставки</DataPath>
+									<ContextMenu name="КМ_ТаблицаКомпонентовВерсияПоставкиКонтекстноеМеню" id="337"/>
+									<ExtendedTooltip name="КМ_ТаблицаКомпонентовВерсияПоставкиРасширеннаяПодсказка" id="338"/>
+								</InputField>
+								<InputField name="КМ_ТаблицаКомпонентовВерсияУстановленная" id="339">
+									<DataPath>КМ_Компоненты.ВерсияУстановленная</DataPath>
+									<ContextMenu name="КМ_ТаблицаКомпонентовВерсияУстановленнаяКонтекстноеМеню" id="340"/>
+									<ExtendedTooltip name="КМ_ТаблицаКомпонентовВерсияУстановленнаяРасширеннаяПодсказка" id="341"/>
+								</InputField>
+								<CheckBoxField name="КМ_ТаблицаКомпонентовАктивен" id="342">
+									<DataPath>КМ_Компоненты.Активен</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КМ_ТаблицаКомпонентовАктивенКонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="КМ_ТаблицаКомпонентовАктивенРасширеннаяПодсказка" id="344"/>
+								</CheckBoxField>
+								<InputField name="КМ_ТаблицаКомпонентовСостояние" id="345">
+									<DataPath>КМ_Компоненты.Состояние</DataPath>
+									<ContextMenu name="КМ_ТаблицаКомпонентовСостояниеКонтекстноеМеню" id="346"/>
+									<ExtendedTooltip name="КМ_ТаблицаКомпонентовСостояниеРасширеннаяПодсказка" id="347"/>
+								</InputField>
+								<InputField name="КМ_ТаблицаКомпонентовОписание" id="348">
+									<DataPath>КМ_Компоненты.Описание</DataPath>
+									<ContextMenu name="КМ_ТаблицаКомпонентовОписаниеКонтекстноеМеню" id="349"/>
+									<ExtendedTooltip name="КМ_ТаблицаКомпонентовОписаниеРасширеннаяПодсказка" id="350"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройки" id="400">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="401"/>
+					<ChildItems>
+						<LabelDecoration name="НС_Пояснение" id="402">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки, которые предоставляют установленные компоненты и инструменты MCP-сервера. Двойной щелчок по строке или кнопка «Открыть» открывает форму настроек.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НС_ПояснениеКонтекстноеМеню" id="403"/>
+							<ExtendedTooltip name="НС_ПояснениеРасширеннаяПодсказка" id="404"/>
+						</LabelDecoration>
+						<LabelDecoration name="НС_НетНастроек" id="405">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>У установленных компонентов нет настроек.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НС_НетНастроекКонтекстноеМеню" id="406"/>
+							<ExtendedTooltip name="НС_НетНастроекРасширеннаяПодсказка" id="407"/>
+						</LabelDecoration>
+						<Table name="НС_ТаблицаНастроек" id="410">
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<DataPath>НС_Настройки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НС_ТаблицаНастроекКонтекстноеМеню" id="411"/>
+							<AutoCommandBar name="НС_ТаблицаНастроекКоманднаяПанель" id="412">
+								<ChildItems>
+									<Button name="НС_КнопкаОткрыть" id="413">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.НС_Открыть</CommandName>
+										<ExtendedTooltip name="НС_КнопкаОткрытьРасширеннаяПодсказка" id="414"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НС_ТаблицаНастроекРасширеннаяПодсказка" id="415"/>
+							<SearchStringAddition name="НС_ТаблицаНастроекСтрокаПоиска" id="416">
+								<AdditionSource>
+									<Item>НС_ТаблицаНастроек</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НС_ТаблицаНастроекСтрокаПоискаКонтекстноеМеню" id="417"/>
+								<ExtendedTooltip name="НС_ТаблицаНастроекСтрокаПоискаРасширеннаяПодсказка" id="418"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НС_ТаблицаНастроекСостояниеПросмотра" id="419">
+								<AdditionSource>
+									<Item>НС_ТаблицаНастроек</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НС_ТаблицаНастроекСостояниеПросмотраКонтекстноеМеню" id="420"/>
+								<ExtendedTooltip name="НС_ТаблицаНастроекСостояниеПросмотраРасширеннаяПодсказка" id="421"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НС_ТаблицаНастроекУправлениеПоиском" id="422">
+								<AdditionSource>
+									<Item>НС_ТаблицаНастроек</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НС_ТаблицаНастроекУправлениеПоискомКонтекстноеМеню" id="423"/>
+								<ExtendedTooltip name="НС_ТаблицаНастроекУправлениеПоискомРасширеннаяПодсказка" id="424"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">НС_ТаблицаНастроекВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="НС_ТаблицаНастроекЗаголовок" id="430">
+									<DataPath>НС_Настройки.Заголовок</DataPath>
+									<ContextMenu name="НС_ТаблицаНастроекЗаголовокКонтекстноеМеню" id="431"/>
+									<ExtendedTooltip name="НС_ТаблицаНастроекЗаголовокРасширеннаяПодсказка" id="432"/>
+								</InputField>
+								<InputField name="НС_ТаблицаНастроекКомпонент" id="433">
+									<DataPath>НС_Настройки.Компонент</DataPath>
+									<ContextMenu name="НС_ТаблицаНастроекКомпонентКонтекстноеМеню" id="434"/>
+									<ExtendedTooltip name="НС_ТаблицаНастроекКомпонентРасширеннаяПодсказка" id="435"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 				<Page name="СтраницаФайловыйТранспорт" id="100">
 					<Title>
 						<v8:item>
@@ -764,6 +984,252 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="КМ_Компоненты" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоненты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяМакета" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя макета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Имя" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя расширения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компонент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВерсияПоставки" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В поставке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВерсияУстановленная" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установлен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Установлен" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Установлен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Активен" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПримененВСеансе" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применён в сеансе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сторонний" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сторонний</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="БезопасныйРежим" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Безопасный режим</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НС_Настройки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Заголовок" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Компонент" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компонент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяКоманды" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя команды</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПутьКФорме" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к форме</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ФТ_Старт" id="1">
@@ -795,6 +1261,111 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ФТ_Стоп</Action>
+		</Command>
+		<Command name="КМ_Установить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить компонент из поставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КМ_Установить</Action>
+		</Command>
+		<Command name="КМ_Обновить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить установленный компонент до версии из поставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КМ_Обновить</Action>
+		</Command>
+		<Command name="КМ_Включить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить компонент (активировать расширение)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КМ_Включить</Action>
+		</Command>
+		<Command name="КМ_Отключить" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить компонент (деактивировать расширение)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КМ_Отключить</Action>
+		</Command>
+		<Command name="КМ_Проверить" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить возможность установки без записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КМ_Проверить</Action>
+		</Command>
+		<Command name="КМ_ОбновитьСписок" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечитать состояние компонентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КМ_ОбновитьСписок</Action>
+		</Command>
+		<Command name="НС_Открыть" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НС_Открыть</Action>
 		</Command>
 	</Commands>
 </Form>
